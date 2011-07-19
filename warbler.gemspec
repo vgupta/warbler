@@ -26,14 +26,14 @@ deployment to a Java environment.}
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rake>, ["~> 0.8.7"])
+      s.add_runtime_dependency(%q<rake>, [">= 0.9.2"])
       s.add_runtime_dependency(%q<jruby-jars>, [">= 1.4.0"])
       s.add_runtime_dependency(%q<jruby-rack>, [">= 1.0.0"])
       s.add_runtime_dependency(%q<rubyzip>, [">= 0.9.4"])
       s.add_development_dependency(%q<rubyforge>, [">= 2.0.4"])
       s.add_development_dependency(%q<hoe>, [">= 2.9.1"])
     else
-      s.add_dependency(%q<rake>, ["~> 0.8.7"])
+      s.add_dependency(%q<rake>, [">= 0.9.2"])
       s.add_dependency(%q<jruby-jars>, [">= 1.4.0"])
       s.add_dependency(%q<jruby-rack>, [">= 1.0.0"])
       s.add_dependency(%q<rubyzip>, [">= 0.9.4"])
@@ -41,7 +41,7 @@ deployment to a Java environment.}
       s.add_dependency(%q<hoe>, [">= 2.9.1"])
     end
   else
-    s.add_dependency(%q<rake>, ["~> 0.8.7"])
+    s.add_dependency(%q<rake>, [">= 0.9.2"])
     s.add_dependency(%q<jruby-jars>, [">= 1.4.0"])
     s.add_dependency(%q<jruby-rack>, [">= 1.0.0"])
     s.add_dependency(%q<rubyzip>, [">= 0.9.4"])
